@@ -1,0 +1,44 @@
+{
+  "name": "express-api-base",
+  "version": "1.0.0",
+  "description": "Express boilerplate project for JSON RESTful APIs",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start:dev": "nodemon",
+    "start:prod": "tsc -p . && ts-node dist/server.js",
+    "build": "tsc -p .",
+    "lint": "eslint 'src/**/*.ts' --quiet --fix"
+  },
+  "dependencies": {
+    "@types/cors": "^2.8.7",
+    "@types/dotenv": "^8.2.0",
+    "@types/helmet": "^0.0.47",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-winston": "^4.0.5",
+    "helmet": "^4.1.0",
+    "winston": "^3.3.3"
+  },
+  "keywords": [
+    "nodejs",
+    "typescript",
+    "api"
+  ],
+  "engines": {
+    "node": "12.18.3"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.7",
+    "@typescript-eslint/eslint-plugin": "^3.9.1",
+    "@typescript-eslint/parser": "^3.9.1",
+    "eslint": "^7.7.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-import-resolver-typescript": "^2.2.1",
+    "eslint-plugin-import": "^2.22.0",
+    "nodemon": "^2.0.4",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.7"
+  }
+}
